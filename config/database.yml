@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: raku_ten_production
-  username: raku_ten
-  password: <%= ENV['RAKU_TEN_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
