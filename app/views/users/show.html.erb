@@ -1,0 +1,40 @@
+<div class="formheader">
+  <h1><%= @user.nickname %>さんの選考状況一覧</h1>
+</div>
+
+<hr>
+
+<div class="table">
+  <table>
+    <tr>
+      <th>応募日</th>
+      <th>企業名</th>
+      <th>応募経路</th>
+      <th>勤務地</th>
+      <th>選考フェーズ</th>
+      <th>企業の特徴</th>
+      <th>求人URL</th>
+      <th>企業HP</th>
+      <th >編集</th>
+    </tr>
+    <% @posts.each do |post| %>
+      <tr>
+        <td><%= post.date %></td>
+        <td><%= post.company %></td>
+        <td><%= post.site %></td>
+        <td><%= post.place %></td>
+        <td><%= post.phase %></td>
+        <td><%= post.features %></td>
+        <td><%= post.url %></td>
+        <td><%= post.hp %></td>
+        <td><%= link_to '編集', "/posts/#{post.id}/edit", method: :get %>｜<%= link_to '削除', "/posts/#{post.id}", method: :delete %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
+
+<hr class="under">
+
+<div class="formfooter">
+  <%= link_to 'トップへ戻る', "/", method: :get %>
+</div>

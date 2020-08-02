@@ -2,7 +2,7 @@
 .header{
   height: 70px;
   width: 100%;
-  background-color: #ffa500;
+  background-color: #52c2d0;
   position: fixed;
   z-index: 1;
   display: flex;
@@ -13,6 +13,11 @@
 /*ヘッダータイトル*/
 .header-left{
   margin: auto 0;
+}
+
+.header-left a{
+  text-decoration: none;
+  color: white;
 }
 
 .header-title {
@@ -27,7 +32,9 @@
   font-size: 18px;
 }
 
-.header-right ul{
+.header-right a{
+  text-decoration: none;
+  color: white;
 
 }
 
@@ -89,7 +96,7 @@
 
 /*フッター*/
 .footer{
-  background-color: #ffa500;
+  background-color:#52c2d0;
   color:white;
   text-align: center;
   line-height:60px;

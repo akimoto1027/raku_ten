@@ -3,9 +3,18 @@
     <%= link_to 'ラクテン！', '/', class: "header-title" %>
   </div>
   <div class = "header-right">
+  <% if user_signed_in? %>
     <ul>
-      <li>新規登録</li>
-      <li>ログイン</li>
+      <li><%= link_to "マイページ", user_path(current_user), class: "header__right--btn" %></li>
+      <li><%= link_to "新規投稿", new_post_path, class: "header__right--btn" %></li>
+      <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "header__right--btn" %></li>
+    </ul>
+  <% else %>
+    <ul>
+      <li><%= link_to '新規登録', new_user_registration_path, method: :get %></li>
+      <li><%= link_to 'ログイン', new_user_session_path, method: :get %></li>
+    </ul>
+  <% end %>
   </div>
 </div>
 
@@ -21,7 +30,7 @@
     </li>
     <li>
       <i class="fa fa-address-book-o fa-4x" aria-hidden="true"></i>
-      <%= link_to '選考状況一覧', posts_path%>
+      <%= link_to '選考状況一覧', user_path(current_user)%>
     </li>
   </ul>
 </div>
