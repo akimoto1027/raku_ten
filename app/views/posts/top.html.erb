@@ -1,1 +1,33 @@
-hello world
+<div class = "header">
+  <div class = "header-left">
+    <%= link_to 'ラクテン！', '/', class: "header-title" %>
+  </div>
+  <div class = "header-right">
+    <ul>
+      <li>新規登録</li>
+      <li>ログイン</li>
+  </div>
+</div>
+
+<div class="main">
+  <ul class="main-function">
+    <li>
+      <i class="fa fa-handshake-o fa-4x" aria-hidden="true"></i>
+      <h3>転職サイト一覧</h3>
+    </li>
+    <li>
+      <i class="fa fa-calendar fa-4x" aria-hidden="true"></i>
+      <%= link_to '選考状況登録', new_post_path%>
+    </li>
+    <li>
+      <i class="fa fa-address-book-o fa-4x" aria-hidden="true"></i>
+      <%= link_to '選考状況一覧', posts_path%>
+    </li>
+  </ul>
+</div>
+
+<div class = "footer">
+  <div class = "footer-message">
+    &copy;2020 Manage App
+  </div>
+</div>

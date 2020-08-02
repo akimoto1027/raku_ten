@@ -1,0 +1,69 @@
+<div class="wrapper">
+  <div class="formheader">
+    <h1>選考状況登録フォーム</h1>
+  </div>
+
+  <hr>
+
+  <div class="form">
+    <%= form_with(model: @post, local: true) do |form| %>
+      <div class="main-form">
+        <p class="form-message">応募した企業情報及び詳細事項を入力してください。</p>
+        <div class="form-group">
+          <p class="form-list">企業名 <span class="label label-danger">必須</span></p>
+          <%= form.text_field :company, class: "form-text", placeholder: "企業名" %>
+        </div>
+
+        <div class="form-group">
+          <p class="form-list">応募経路 <span class="label label-danger">必須</span></p>
+          <%= form.text_field :site, class: "form-text", placeholder: "応募経路" %>
+        </div>
+
+        <div class="form-group">
+          <p class="form-list">勤務地 </p>
+          <%= form.text_field :place, class: "form-text", placeholder: "勤務地" %>
+        </div>
+
+        <div class="form-group">
+          <p class="form-list">選考フェーズ </p>
+          <%= form.text_field :phase, class: "form-text", placeholder: "選考フェーズ" %>
+        </div>
+
+        <div class="form-group">
+          <p class="form-list">応募日 </p>
+          <%= form.text_field :date, class: "form-text", placeholder: "応募日" %>
+        </div>
+
+        <div class="form-group">
+          <p class="form-list">求人URL </p>
+          <%= form.text_field :url, class: "form-text", placeholder: "求人URL" %>
+        </div>
+
+        <div class="form-group">
+          <p class="form-list">企業HP </p>
+          <%= form.text_field :hp, class: "form-text", placeholder: "企業HP" %>
+        </div>
+
+        <div class="form-group">
+          <p class="form-list">備考 </p>
+          <%= form.text_field :others, class: "form-text", placeholder: "備考" %>
+        </div>
+
+        <div class="form-group">
+          <p class="form-list">企業の特徴 </p>
+          <%= form.text_field :features, class: "form-text", placeholder: "企業の特徴" %>
+        </div>
+
+        <div class="col text-center">
+          <button type="submit" class="btn btn-info btn-lg">登録する</button>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <hr class="under">
+
+  <div class="formfooter">
+    <%= link_to 'マイページへ戻る', "/", method: :get %>
+  </div>
+</div>
