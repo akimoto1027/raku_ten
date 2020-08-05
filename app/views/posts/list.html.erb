@@ -1,33 +1,51 @@
-<div class="card">
-
-  <div class="card1">
-      <%= image_tag 'rikunabi.png', :size =>'300x200', :class =>'image1'%>
-      <p class="title1"><a href="https://next.rikunabi.com/?__m=1596530293467-6897387058658805709">リクナビNEXT</a></p>
-      <p class="content1">リクルートの転職サイト。多業種・多職種の求人あり。</p>
+<div class="wrapper">
+  <div class="formheader">
+    <h1>転職サイト一覧</h1>
   </div>
 
-  <div class="card1">
-      <%= image_tag 'findjob.jpg', :size =>'300x200', :class =>'image1'%>
-      <p class="title1"><a href="https://www.find-job.net/">Find Job</a></p>
-      <p class="content1">IT･Web業界の優良企業の転職・求人情報が満載。</p>
+  <hr>
+
+  <div class="card">
+    <div class="card1">
+        <%= image_tag 'rikunabi.png', :size =>'300x200', :class =>'image1'%>
+        <p class="title1"><a href="https://next.rikunabi.com/?__m=1596530293467-6897387058658805709">リクナビNEXT</a></p>
+        <p class="content1">リクルートの転職サイト。多業種・多職種の求人あり。</p>
+    </div>
+
+    <div class="card1">
+        <%= image_tag 'findjob.jpg', :size =>'300x200', :class =>'image1'%>
+        <p class="title1"><a href="https://www.find-job.net/">Find Job</a></p>
+        <p class="content1">IT･Web業界の優良企業の転職・求人情報が満載。</p>
+    </div>
+
+    <div class="card1">
+        <%= image_tag 'green.jpg', :size =>'300x200', :class =>'image1'%>
+        <p class="title1"><a href="https://www.green-japan.com/">Green</a></p>
+        <p class="content1">IT･Web業界に特化した求人情報が満載。</p>
+    </div>
+
+    <div class="card1">
+        <%= image_tag 'en.jpg', :size =>'300x200', :class =>'image1'%>
+        <p class="title1"><a href="https://employment.en-japan.com/">エン転職</a></p>
+        <p class="content1">日本最大級の転職サイト。多業種・多職種の求人あり。</p>
+    </div>
+
+    <div class="card1">
+        <%= image_tag 'mynavi.jpg', :size =>'300x200', :class =>'image1'%>
+        <p class="title1"><a href="https://employment.en-japan.com/">マイナビ転職</a></p>
+        <p class="content1">日本最大級の転職サイト。多業種・多職種の求人あり。</p>
+    </div>
+
+    <div class="card1">
+        <%= image_tag 'wantedly.jpg', :size =>'300x200', :class =>'image1'%>
+        <p class="title1"><a href="https://employment.en-japan.com/">Wantedly</a></p>
+        <p class="content1">カジュアル面談からスタートが特徴。運命のチームや仕事に出会えたり、人脈を広げ、ビジネスの情報収集に使えるビジネスSNS。</p>
+    </div>
   </div>
 
-  <div class="card1">
-      <%= image_tag 'green.jpg', :size =>'300x200', :class =>'image1'%>
-      <p class="title1"><a href="https://www.green-japan.com/">Green</a></p>
-      <p class="content1">IT･Web業界に特化した求人情報が満載。</p>
-  </div>
+  <hr class="under">
 
-  <div class="card1">
-      <%= image_tag 'en.jpg', :size =>'300x200', :class =>'image1'%>
-      <p class="title1"><a href="https://employment.en-japan.com/">エン転職</a></p>
-      <p class="content1">日本最大級の転職サイト。多業種・多職種の求人あり。</p>
+  <div class="formfooter">
+    <%= link_to 'トップページへ戻る', "/", method: :get %>
   </div>
-
-  <div class="card1">
-      <%= image_tag 'mynavi.jpg', :size =>'300x200', :class =>'image1'%>
-      <p class="title1"><a href="https://employment.en-japan.com/">マイナビ転職</a></p>
-      <p class="content1">日本最大級の転職サイト。多業種・多職種の求人あり。</p>
-  </div>
-
 </div>
