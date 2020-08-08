@@ -1,24 +1,33 @@
-# README
+# アプリケーション情報
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## アプリケーション概要
+転職活動管理アプリを作成しました。 
+* ユーザー：複数の転職サイトを利用し複数企業に応募している転職活動中の人。
+* 出来ること：転職活動状況の登録及び可視化。
 
-Things you may want to cover:
+* 接続先情報
+  * 
+* テスト用アカウント
+  * Email Address：
+  * Password: 
 
-* Ruby version
+## 制作背景
+転職活動時に、複数の転職サイトを使い複数企業に対して応募をしていると、「いつ・どこの企業に・どのサイト」から応募したかを各求人サイトに見にいく必要があり、それらを一括管理が出来るアプリがあれば、転職活動をより効率よく進めることが出来ると考えたため。
 
-* System dependencies
+## 実装予定
+* レスポンシブ対応
+* スケシュール管理機能
 
-* Configuration
+  
+## 開発環境
+Ruby/Ruby on Rails/HTML/CSS/MySQL/Github/AWS/Visual Studio Code
 
-* Database creation
+## 開発期間と平均作業時間
+* 開発期間：約2週間
+* 1日あたりの平均作業時間：約5時間
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 動作確認方法
+* Chromeの最新版を利用してアクセスしてください。
+* ただしデプロイ等で接続できないタイミングもございます。その際は少し時間をおいてから接続してください。
+* 接続先およびログイン情報については、上記の通りです。
+* 同時に複数の方がログインしている場合に、ログインできない可能性があります。
