@@ -1,11 +1,10 @@
 Rails.application.routes.draw do
   devise_for :users
-  root 'posts#top'
+  root 'posts#index'
 
   resources :posts do
     collection do
       get 'list', to: 'posts#list'
-      get 'top', to: 'posts#top'
     end
   end
   resources :users, only: :show
