@@ -1,8 +1,11 @@
 class PostsController < ApplicationController
 
+  def top
+  end
+
   def index
     @posts = Post.includes(:user)
-    # redirect_to root_path
+    redirect_to root_path
   end
 
   def new
