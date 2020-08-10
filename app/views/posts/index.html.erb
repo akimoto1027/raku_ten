@@ -5,7 +5,7 @@
   <div class = "header-right">
   <% if user_signed_in? %>
     <ul>
-      <li><%= link_to "マイページ", class: "header__right--btn" %></li>
+      <li><%= link_to "マイページ", user_path(current_user), class: "header__right--btn" %></li>
       <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "header__right--btn" %></li>
     </ul>
   <% else %>
@@ -19,6 +19,20 @@
 
 <div class="main">
   <ul class="main-function">
+  <% if user_signed_in? %>
+    <li>
+      <i class="fa fa-handshake-o fa-4x" aria-hidden="true"></i>
+      <%= link_to '転職サイト一覧' , {controller: :posts, action: :list} , id: :kist, classl: :list %>
+    </li>
+    <li>
+      <i class="fa fa-calendar fa-4x" aria-hidden="true"></i>
+      <%= link_to '選考状況登録', new_post_path%>
+    </li>
+    <li>
+      <i class="fa fa-address-book-o fa-4x" aria-hidden="true"></i>
+      <%= link_to '選考状況一覧', user_path(current_user)%>
+    </li>
+  <% else %>
     <li>
       <i class="fa fa-handshake-o fa-4x" aria-hidden="true"></i>
       <%= link_to '転職サイト一覧' , {controller: :posts, action: :list} , id: :kist, classl: :list %>
@@ -31,11 +45,12 @@
       <i class="fa fa-address-book-o fa-4x" aria-hidden="true"></i>
       <%= link_to '選考状況一覧'%>
     </li>
+  <% end %>
   </ul>
 </div>
 
 <div class = "footer">
   <div class = "footer-message">
-    &copy;2020 Manage App
+    &copy;2020 ラクテン！
   </div>
 </div>
