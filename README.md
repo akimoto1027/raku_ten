@@ -23,7 +23,7 @@
 
   
 ## 開発環境
-Ruby/Ruby on Rails/HTML/CSS/MySQL/Github/Heroku/Visual Studio Code
+Ruby/Ruby on Rails/HTML/CSS/PostgreSQL/Github/Heroku/Visual Studio Code
 
 ## 開発期間と平均作業時間
 * 開発期間：約2週間
