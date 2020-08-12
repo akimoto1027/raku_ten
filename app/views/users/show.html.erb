@@ -19,14 +19,14 @@
     </tr>
     <% @posts.each do |post| %>
       <tr>
-        <td><%= post.date %></td>
+        <td><%= post.date.strftime("%Y年%m月%d日") %></td>
         <td><%= post.company %></td>
         <td><%= post.site %></td>
         <td><%= post.place %></td>
         <td><%= post.phase %></td>
         <td><%= post.features %></td>
-        <td><%= post.url %></td>
-        <td><%= post.hp %></td>
+        <td><a href="<%= post.url%>" target="_blank"><%= post.url%></a></td>
+        <td><a href="<%= post.hp%>" target="_blank"><%= post.hp%></a></td>
         <td><%= link_to '編集', "/posts/#{post.id}/edit", method: :get %>｜<%= link_to '削除', "/posts/#{post.id}", method: :delete %></td>
       </tr>
     <% end %>

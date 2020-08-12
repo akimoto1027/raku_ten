@@ -16,7 +16,7 @@
 
         <div class="form-group">
           <p class="form-list">応募経路 <span class="label label-danger">必須</span></p>
-          <%= form.text_field :site, class: "form-text", placeholder: "応募経路" %>
+          <%= form.select :site, [["Green", "Green"], ["Find job", "Find job"],["Wantedly", "Wantedly"],["リクナビNEXT", "リクナビNEXT"],["マイナビ転職", "マイナビ転職"],["DODA", "DODA"],["en転職", "en転職"],["indeed", "indeed"],["HP", "HP"],["その他", "その他"]], class: "form-text", :prompt => "選択してください" %>
         </div>
 
         <div class="form-group">
@@ -26,7 +26,7 @@
 
         <div class="form-group">
           <p class="form-list">選考フェーズ </p>
-          <%= form.text_field :phase, class: "form-text", placeholder: "選考フェーズ" %>
+          <%= form.select :phase, [["書類選考", "書類選考"], ["一次選考", "一次選考"],["二次選考", "二次選考"],["三次選考", "三次選考"],["最終面接", "最終面接"],["内定", "内定"],["お見送り", "お見送り"],["その他", "その他"]], class: "form-text", :prompt => "選択してください" %>
         </div>
 
         <div class="form-group">
