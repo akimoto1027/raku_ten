@@ -6,10 +6,10 @@
 * 出来ること：転職活動状況の登録及び可視化。
 
 * 接続先情報
-  * 
+  * https://rakutensyoku.herokuapp.com/
 * テスト用アカウント
-  * Email Address：
-  * Password: 
+  * Email Address： test@test
+  * Password: test1234
 
 ## アプリケーション名
 ラクテン（由来：楽々転職活動！の"楽"と"転"を合わせたもの。）
@@ -23,7 +23,7 @@
 
   
 ## 開発環境
-Ruby/Ruby on Rails/HTML/CSS/MySQL/Github/AWS/Visual Studio Code
+Ruby/Ruby on Rails/HTML/CSS/PostgreSQL/Github/Heroku/Visual Studio Code
 
 ## 開発期間と平均作業時間
 * 開発期間：約2週間
