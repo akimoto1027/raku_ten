@@ -74,3 +74,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'pry-rails'
 gem 'font-awesome-rails'
 gem 'devise'
+gem 'kaminari'
